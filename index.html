@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+    <script language="javascript" src="script.js"></script>
+    <script>
+        var mensagem = "Página carregada com sucesso!"
+    </script>
+
+    <style>
+    body {
+        font-size: 30px;
+        margin-top: 5px;
+        margin-left: 800px;
+        font-family: verdana;
+        margin-right: 20px;
+        border: 4px;
+        column-gap: 5px;
+        color: black;
+        background-color: rgb(158, 194, 247);
+    }
+
+    .button {
+        font-size: 50px;
+        padding: 10px 20px;
+        gap: 5px;
+        height: 20px;
+        width: 10px;
+    }
+
+        
+    .h1 {
+        font-size: 60px;
+        position: center;
+        margin: center;
+        margin-left: 80px;
+     }
+    </style>
+  
+</head>
+
+<body>
+
+    <div>
+        <h1> Operadores Aritméticos </h1>
+    </div>
+
+    
+    <script language="javascript">
+        alert(mensagem);
+    </script>
+
+    Primeiro Número <br>
+    <input id="n1" type="number" /><br />
+    <br>
+    Segundo Número <br />
+    <input id="n2" type="number" /><br /><br />
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+    <button onclick="igual()">Comparar </button>
+    <br /><br />
+    O RESULTADO é <span></span>
+
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var resultado = document.querySelector('span')
+    
+        function somar() {
+            resultado.innerHTML = parseInt(n1.value) + parseInt(n2.value)
+        }
+    
+        function subtrair() {
+            resultado.innerHTML = parseInt(n1.value) - parseInt(n2.value)
+        }
+    
+        function dividir() {
+            resultado.innerHTML = parseInt(n1.value) / parseInt(n2.value)
+        }
+    
+        function multiplicar() {
+            resultado.innerHTML = parseInt(n1.value) * parseInt(n2.value)
+        }
+
+        function igual() {
+            resultado.innerHTML = parseInt(n1.value) == parseInt(n2.value)
+        }
+    </script>
+          
+</body>
+
+</html>
+
+
+
